@@ -4,9 +4,8 @@ metadata:
   name: mysql-pvc1
 spec:
   accessModes:
-  - ReadWriteOnce
-  storageClassName: ocs-storagecluster-ceph-rbd
+  - ReadWriteMany
+  storageClassName: ocs-storagecluster-cephfs
   resources:
     requests:
       storage: 1Gi
-  volumeMode: Block
